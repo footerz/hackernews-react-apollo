@@ -49,7 +49,7 @@ class CreateLink extends Component {
             const first = LINKS_PER_PAGE
             const skip = 0
             const orderBy = 'createdAt_DESC'
-            const data = store.readQuery({ 
+            const data = store.readQuery({
               query: FEED_QUERY,
               variables: { first, skip, orderBy }
             })
